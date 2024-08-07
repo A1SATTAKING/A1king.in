@@ -146,56 +146,142 @@
                 <span>= 01.20 AM</span>
             </div>
 
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-            <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
-            <script type="text/javascript">
-                window.tailwind.config = {
-                    darkMode: ['class'],
-                    theme: {
-                        extend: {
-                            colors: {
-                                border: 'hsl(var(--border))',
-                                input: 'hsl(var(--input))',
-                                ring: 'hsl(var(--ring))',
-                                background: 'hsl(var(--background))',
-                                foreground: 'hsl(var(--foreground))',
-                                primary: {
-                                    DEFAULT: 'hsl(var(--primary))',
-                                    foreground: 'hsl(var(--primary-foreground))'
-                                },
-                                secondary: {
-                                    DEFAULT: 'hsl(var(--secondary))',
-                                    foreground: 'hsl(var(--secondary-foreground))'
-                                },
-                                destructive: {
-                                    DEFAULT: 'hsl(var(--destructive))',
-                                    foreground: 'hsl(var(--destructive-foreground))'
-                                },
-                                muted: {
-                                    DEFAULT: 'hsl(var(--muted))',
-                                    foreground: 'hsl(var(--muted-foreground))'
-                                },
-                                accent: {
-                                    DEFAULT: 'hsl(var(--accent))',
-                                    foreground: 'hsl(var(--accent-foreground))'
-                                },
-                                popover: {
-                                    DEFAULT: 'hsl(var(--popover))',
-                                    foreground: 'hsl(var(--popover-foreground))'
-                                },
-                                card: {
-                                    DEFAULT: 'hsl(var(--card))',
-                                    foreground: 'hsl(var(--card-foreground))'
-                                },
+
+
+
+
+
+
+
+            <br>
+
+
+
+
+
+
+
+
+
+
+            <div class="border-t border-dotted border-black mt-4 pt-4">
+                <p class="text-center text-lg mb-4">अपनी गेम डलवाने और अपनी एड (पर्ची) डलवाने के लिए नीचे नीचे नंबर
+                    पे क्लिक करें</p>
+                <div class="group relative flex justify-center items-center text-zinc-600 text-sm font-bold">
+                    <div
+                        class="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
+                        <div class="bg-lime-200 flex items-center gap-1 p-2 rounded-md">
+                            <svg fill="none" viewBox="0 0 24 24" height="20px" width="20px"
+                                xmlns="http://www.w3.org/2000/svg" class="stroke-zinc-600">
+                                <circle stroke-linejoin="round" r="9" cy="12" cx="12"></circle>
+                                <path stroke-linejoin="round" d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"></path>
+                                <path stroke-linejoin="round" d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"></path>
+                                <path stroke-linejoin="round" d="M3 12H21"></path>
+                                <path stroke-linejoin="round" d="M19.5 7.5H4.5"></path>
+                                <g filter="url(#filter0_d_15_556)">
+                                    <path stroke-linejoin="round" d="M19.5 16.5H4.5"></path>
+                                </g>
+                                <defs>
+                                    <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="3"
+                                        width="17" y="16" x="3.5" id="filter0_d_15_556">
+                                        <feFlood result="BackgroundImageFix" flood-opacity="0"></feFlood>
+                                        <feColorMatrix result="hardAlpha"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" type="matrix"
+                                            in="SourceAlpha"></feColorMatrix>
+                                        <feOffset dy="1"></feOffset>
+                                        <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" type="matrix">
+                                        </feColorMatrix>
+                                        <feBlend result="effect1_dropShadow_15_556" in2="BackgroundImageFix"
+                                            mode="normal">
+                                        </feBlend>
+                                        <feBlend result="shape" in2="effect1_dropShadow_15_556" in="SourceGraphic"
+                                            mode="normal">
+                                        </feBlend>
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <span>https://chat.whatsapp.com/Ks12Q7zLhGqDI1sgLPoHSh</span>
+                        </div>
+                        <div
+                            class="shadow-md bg-lime-200 absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1">
+                        </div>
+                        <div
+                            class="rounded-md bg-white group-hover:opacity-0 group-hover:scale-[115%] group-hover:delay-700 duration-500 w-full h-full absolute top-0 left-0">
+                            <div
+                                class="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-lime-200 to-yellow-200 p-3 rounded-full cursor-pointer duration-300">
+                        <svg fill="none" viewBox="0 0 24 24" height="20px" width="20px"
+                            xmlns="http://www.w3.org/2000/svg" class="fill-zinc-600">
+                            <path stroke-linejoin="round" stroke-linecap="round"
+                                d="M15.4306 7.70172C7.55045 7.99826 3.43929 15.232 2.17021 19.3956C2.07701 19.7014 2.31139 20 2.63107 20C2.82491 20 3.0008 19.8828 3.08334 19.7074C6.04179 13.4211 12.7066 12.3152 15.514 12.5639C15.7583 12.5856 15.9333 12.7956 15.9333 13.0409V15.1247C15.9333 15.5667 16.4648 15.7913 16.7818 15.4833L20.6976 11.6784C20.8723 11.5087 20.8993 11.2378 20.7615 11.037L16.8456 5.32965C16.5677 4.92457 15.9333 5.12126 15.9333 5.61253V7.19231C15.9333 7.46845 15.7065 7.69133 15.4306 7.70172Z">
+                            </path>
+                        </svg><span class="text-[0px] group-hover:text-sm duration-300">Check Our Whatsapp group</span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://wa.me/918053023797"
+                        class="text-green-500 text-lg font-bold">https://chat.whatsapp.com/Ks12Q7zLhGqDI1sgLPoHSh</a>
+                </div>
+            </div>
+        </div>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+        <script type="text/javascript">
+            window.tailwind.config = {
+                darkMode: ['class'],
+                theme: {
+                    extend: {
+                        colors: {
+                            border: 'hsl(var(--border))',
+                            input: 'hsl(var(--input))',
+                            ring: 'hsl(var(--ring))',
+                            background: 'hsl(var(--background))',
+                            foreground: 'hsl(var(--foreground))',
+                            primary: {
+                                DEFAULT: 'hsl(var(--primary))',
+                                foreground: 'hsl(var(--primary-foreground))'
                             },
-                        }
+                            secondary: {
+                                DEFAULT: 'hsl(var(--secondary))',
+                                foreground: 'hsl(var(--secondary-foreground))'
+                            },
+                            destructive: {
+                                DEFAULT: 'hsl(var(--destructive))',
+                                foreground: 'hsl(var(--destructive-foreground))'
+                            },
+                            muted: {
+                                DEFAULT: 'hsl(var(--muted))',
+                                foreground: 'hsl(var(--muted-foreground))'
+                            },
+                            accent: {
+                                DEFAULT: 'hsl(var(--accent))',
+                                foreground: 'hsl(var(--accent-foreground))'
+                            },
+                            popover: {
+                                DEFAULT: 'hsl(var(--popover))',
+                                foreground: 'hsl(var(--popover-foreground))'
+                            },
+                            card: {
+                                DEFAULT: 'hsl(var(--card))',
+                                foreground: 'hsl(var(--card-foreground))'
+                            },
+                        },
                     }
                 }
-            </script>
-            <style type="text/tailwindcss">
-                @layer base {
+            }
+        </script>
+        <style type="text/tailwindcss">
+            @layer base {
 				:root {
 					--background: 0 0% 100%;
 --foreground: 240 10% 3.9%;
@@ -245,35 +331,35 @@
 
 
 
-            <div class="flex flex-col items-center p-4 space-y-4">
-                <div class="bg-transparent-400 text-center p-4 w-full">
-                    <!-- <p class="text-black font-semibold">A1-ROYALSATTA BEST SITE SATTA RESULT</p> -->
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">A1SATTAKING</span>
-                        <span aria-hidden="true" class="hover-text">WELCOME</span>
-                    </button>
-                    <!-- <h1 class="text-white text-2xl font-bold">WWW.A1-ROYALSATTA.IN</h1> -->
-                </div>
+        <div class="flex flex-col items-center p-4 space-y-4">
+            <div class="bg-transparent-400 text-center p-4 w-full">
+                <!-- <p class="text-black font-semibold">A1-ROYALSATTA BEST SITE SATTA RESULT</p> -->
+                <button class="button" data-text="Awesome">
+                    <span class="actual-text">A1SATTAKING</span>
+                    <span aria-hidden="true" class="hover-text">WELCOME</span>
+                </button>
+                <!-- <h1 class="text-white text-2xl font-bold">WWW.A1-ROYALSATTA.IN</h1> -->
+            </div>
 
 
 
 
-                <div class="timer">
-                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
-                </div>
-                <script src="index.js"></script>
-                <h2 class="text-black text-xl font-semibold">A1SATTAKING Live Result Today</h2>
-                <p id="cityName1" class="text-pink-500 text-2xl font-bold">रायपुर & मथुरा</p>
+            <div class="timer">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <script src="index.js"></script>
+            <h2 class="text-black text-xl font-semibold">A1SATTAKING Live Result Today</h2>
+            <p id="cityName1" class="text-pink-500 text-2xl font-bold">रायपुर & मथुरा</p>
 
-                <p id="number" class="text-green-500 text-3xl font-bold">97 & 56</p>
-                <p id="cityName2" class="text-pink-500 text-2xl font-bold">गाजियाबाद
+            <p id="number" class="text-green-500 text-3xl font-bold">97 & 56</p>
+            <p id="cityName2" class="text-pink-500 text-2xl font-bold">गाजियाबाद
 
 
-                </p>
-                <!-- <div id="spinner"></div> -->
-                <div class="spinner">
-                    <div class="spinnerin"></div>
-                </div>
+            </p>
+            <!-- <div id="spinner"></div> -->
+            <div class="spinner">
+                <div class="spinnerin"></div>
+            </div>
 </body>
 </div>
 
@@ -393,79 +479,8 @@
     <p class="mt-2">आप आपनी गेम सुमि भाई का पास प्ले करलो</p>
     <p class="mt-2 text-center text-xl">👑 | S U M I भाई खाईवाल | 👑</p>
     <p class="mt-2"> रेट है 10 का 970 तोह बिसहस्स प्ले करलो पेमेंट की फुल गारंटी</p>
-    // <div class="mt-4 text-center">
-    //     <a href="https://wa.me/your-number" class="text-blue-500 font-bold">✓ WHATSAPP CHAT</a>
-    // </div>
-    // <div class="mt-4 flex justify-center">
-    //     <a href="https://wa.me/your-number">
-    //         <img src="https://placehold.co/50x50?text=WhatsApp+Icon" alt="WhatsApp Icon" class="w-12 h-12">
-    //     </a>
-    // </div>
-</div>
-</div>
-</div>
-<div class="border-t border-dotted border-black mt-4 pt-4">
-    <p class="text-center text-lg mb-4">अपनी गेम डलवाने और अपनी एड (पर्ची) डलवाने के लिए नीचे नीचे नंबर
-        पे क्लिक करें</p>
-    <div class="group relative flex justify-center items-center text-zinc-600 text-sm font-bold">
-        <div
-            class="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[150%] -translate-y-[300%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
-            <div class="bg-lime-200 flex items-center gap-1 p-2 rounded-md">
-                <svg fill="none" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
-                    class="stroke-zinc-600">
-                    <circle stroke-linejoin="round" r="9" cy="12" cx="12"></circle>
-                    <path stroke-linejoin="round" d="M12 3C12 3 8.5 6 8.5 12C8.5 18 12 21 12 21"></path>
-                    <path stroke-linejoin="round" d="M12 3C12 3 15.5 6 15.5 12C15.5 18 12 21 12 21"></path>
-                    <path stroke-linejoin="round" d="M3 12H21"></path>
-                    <path stroke-linejoin="round" d="M19.5 7.5H4.5"></path>
-                    <g filter="url(#filter0_d_15_556)">
-                        <path stroke-linejoin="round" d="M19.5 16.5H4.5"></path>
-                    </g>
-                    <defs>
-                        <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="3" width="17"
-                            y="16" x="3.5" id="filter0_d_15_556">
-                            <feFlood result="BackgroundImageFix" flood-opacity="0"></feFlood>
-                            <feColorMatrix result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                type="matrix" in="SourceAlpha"></feColorMatrix>
-                            <feOffset dy="1"></feOffset>
-                            <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
-                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" type="matrix">
-                            </feColorMatrix>
-                            <feBlend result="effect1_dropShadow_15_556" in2="BackgroundImageFix" mode="normal">
-                            </feBlend>
-                            <feBlend result="shape" in2="effect1_dropShadow_15_556" in="SourceGraphic" mode="normal">
-                            </feBlend>
-                        </filter>
-                    </defs>
-                </svg>
-                <span>https://chat.whatsapp.com/Ks12Q7zLhGqDI1sgLPoHSh</span>
-            </div>
-            <div
-                class="shadow-md bg-lime-200 absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1">
-            </div>
-            <div
-                class="rounded-md bg-white group-hover:opacity-0 group-hover:scale-[115%] group-hover:delay-700 duration-500 w-full h-full absolute top-0 left-0">
-                <div
-                    class="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1">
-                </div>
-            </div>
-        </div>
 
-        <div
-            class="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-lime-200 to-yellow-200 p-3 rounded-full cursor-pointer duration-300">
-            <svg fill="none" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
-                class="fill-zinc-600">
-                <path stroke-linejoin="round" stroke-linecap="round"
-                    d="M15.4306 7.70172C7.55045 7.99826 3.43929 15.232 2.17021 19.3956C2.07701 19.7014 2.31139 20 2.63107 20C2.82491 20 3.0008 19.8828 3.08334 19.7074C6.04179 13.4211 12.7066 12.3152 15.514 12.5639C15.7583 12.5856 15.9333 12.7956 15.9333 13.0409V15.1247C15.9333 15.5667 16.4648 15.7913 16.7818 15.4833L20.6976 11.6784C20.8723 11.5087 20.8993 11.2378 20.7615 11.037L16.8456 5.32965C16.5677 4.92457 15.9333 5.12126 15.9333 5.61253V7.19231C15.9333 7.46845 15.7065 7.69133 15.4306 7.70172Z">
-                </path>
-            </svg><span class="text-[0px] group-hover:text-sm duration-300">Check Our Whatsapp group</span>
-        </div>
-    </div>
-
-    <div class="text-center">
-        <a href="https://wa.me/918053023797"
-            class="text-green-500 text-lg font-bold">https://chat.whatsapp.com/Ks12Q7zLhGqDI1sgLPoHSh</a>
-    </div>
+</div>
 </div>
 </div>
 
