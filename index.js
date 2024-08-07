@@ -393,14 +393,14 @@
     <p class="mt-2">आप आपनी गेम सुमि भाई का पास प्ले करलो</p>
     <p class="mt-2 text-center text-xl">👑 | S U M I भाई खाईवाल | 👑</p>
     <p class="mt-2"> रेट है 10 का 970 तोह बिसहस्स प्ले करलो पेमेंट की फुल गारंटी</p>
-    <div class="mt-4 text-center">
-        <a href="https://wa.me/your-number" class="text-blue-500 font-bold">✓ WHATSAPP CHAT</a>
-    </div>
-    <div class="mt-4 flex justify-center">
-        <a href="https://wa.me/your-number">
-            <img src="https://placehold.co/50x50?text=WhatsApp+Icon" alt="WhatsApp Icon" class="w-12 h-12">
-        </a>
-    </div>
+    // <div class="mt-4 text-center">
+    //     <a href="https://wa.me/your-number" class="text-blue-500 font-bold">✓ WHATSAPP CHAT</a>
+    // </div>
+    // <div class="mt-4 flex justify-center">
+    //     <a href="https://wa.me/your-number">
+    //         <img src="https://placehold.co/50x50?text=WhatsApp+Icon" alt="WhatsApp Icon" class="w-12 h-12">
+    //     </a>
+    // </div>
 </div>
 </div>
 </div>
