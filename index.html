@@ -166,10 +166,24 @@
 
 
 
+ <div class="live-time" id="liveTime">Loading...</div>
 
-            <div class="timer">
-                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
-            </div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('liveTime').textContent = timeString;
+        }
+
+        setInterval(updateTime, 1000); // Update time every second
+
+        window.onload = updateTime; // Update time immediately on load
+    </script>
+           
             <script src="index.js"></script>
             <h2 class="text-black text-xl font-semibold">A1SATTAKING Live Result Today</h2>
             <p id="cityName1" class="text-pink-500 text-2xl font-bold">फरीदाबाद</p>
