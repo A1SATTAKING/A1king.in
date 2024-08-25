@@ -28,36 +28,8 @@ const cities = [
 //     });
 // }
 
-function updateInfo() {
-    const cityName1 = document.getElementById('cityName1');
-    const numberDisplay = document.getElementById('number');
-    const nextCityDisplay = document.getElementById('nextCity');
-    const liveTimerDisplay = document.getElementById('liveTimer');
 
-    const storedCityName1 = localStorage.getItem('cityName1') || cities[0];
-    const storedNumber = localStorage.getItem('number') || '00';
-    const storedNextCity = localStorage.getItem('nextCity') || cities[1];
-
-    cityName1.textContent = storedCityName1;
-    numberDisplay.textContent = storedNumber;
-    nextCityDisplay.textContent = storedNextCity;
-
-    updateTable();
-
-    // Live timer for next update (example: every 10 seconds)
-    const nextUpdateTime = new Date(Date.now() + 10 * 1000); // 10 seconds from now
-    const updateTimer = setInterval(() => {
-        const now = new Date();
-        const timeLeft = nextUpdateTime - now;
-        if (timeLeft <= 0) {
-            clearInterval(updateTimer);
-            updateInfo();
-            return;
-        }
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-        liveTimerDisplay.textContent = seconds + "s";
-    }, 1000);
-}
+  
 
 updateInfo();
 
