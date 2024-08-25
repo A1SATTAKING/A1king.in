@@ -9,11 +9,10 @@ document.getElementById('updateForm').addEventListener('submit', function (event
     localStorage.setItem('number', number);
     localStorage.setItem('nextCity', nextCity);
 
-    // Update numbers for each city
     const cities = [
         'सदर बाजार', 'ग्वालियर', 'दिल्ली बाजार', 'श्री गणेश',
         'फरीदाबाद', 'कानपुर सिटी', 'गाज़ियाबाद', 'अयोध्या',
-        'गली', 'दिसावर'
+        'गली', 'दिसावर', 'आजमगढ़', 'गोरखपुर', 'मथुरा', 'रायपुर'
     ];
 
     cities.forEach(city => {
@@ -22,11 +21,29 @@ document.getElementById('updateForm').addEventListener('submit', function (event
     });
 
     console.log('Data updated successfully!');
-    console.log('City 1:', localStorage.getItem('cityName1'));
-    console.log('Number:', localStorage.getItem('number'));
-    console.log('Next City:', localStorage.getItem('nextCity'));
     cities.forEach(city => {
         console.log(`${city}_yesterday:`, localStorage.getItem(`${city}_yesterday`));
         console.log(`${city}_today:`, localStorage.getItem(`${city}_today`));
     });
+
+    populateCityNumbers(); // Refresh the table data after submission
 });
+
+function populateCityNumbers() {
+    const cities = [
+        'सदर बाजार', 'ग्वालियर', 'दिल्ली बाजार', 'श्री गणेश',
+        'फरीदाबाद', 'कानपुर सिटी', 'गाज़ियाबाद', 'अयोध्या',
+        'गली', 'दिसावर', 'मथुरा'
+    ];
+
+    cities.forEach(city => {
+        const yesterday = localStorage.getItem(`${city}_yesterday`) || '00';
+        const today = localStorage.getItem(`${city}_today`) || '00';
+
+        document.getElementById(`${city}_yesterday`).value = yesterday;
+        document.getElementById(`${city}_today`).value = today;
+    });
+}
+
+// Call the function to populate the data when the page loads
+populateCityNumbers();
