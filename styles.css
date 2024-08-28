@@ -1,14 +1,19 @@
 /* Basic reset and font styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
     background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
-    font-family: Arial, sans-serif;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
+/* Header styling */
 header {
     background-color: #282c34;
     color: #61dafb;
@@ -17,6 +22,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Info box styling */
 .info {
     padding: 1rem;
     background-color: #133a83;
@@ -25,10 +31,25 @@ header {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: white;
-    padding-left:350px;
 }
 
-.overflow-x-auto {
+@media (max-width: 768px) {
+    .info {
+        padding: 0.75rem;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+}
+
+/* Table styling */
+.table-container {
     overflow-x: auto;
     margin: 1rem;
 }
@@ -41,443 +62,41 @@ table {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #ffffff;
+    table-layout: auto;
 }
 
-/* Responsive Styling */
-@media (max-width: 1024px) {
-    .info {
-        max-width: 90%;
-    }
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
 
+th {
+    background-color: #133a83;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
     table {
         font-size: 0.9rem;
     }
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 0.75rem;
-        font-size: 1.2rem;
-    }
-
-    .info {
-        padding: 0.75rem;
-        max-width: 95%;
-    }
-
+@media (max-width: 480px) {
     table {
         font-size: 0.8rem;
     }
 }
 
-@media (max-width: 480px) {
-    header {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
-
-    .info {
-        margin: 0.5rem;
-        padding: 0.5rem;
-        max-width: 100%;
-    }
-
-    table {
-        font-size: 0.7rem;
-    }
-
-    .container {
-        width: 100%;
-        padding: 0 0.5rem;
-    }
-}
-
-
-/* Link Styles (commented out) */
-/* .link {
-    text-decoration: none;
-    color: #4a90e2;
-    font-weight: bold;
-    display: inline-block;
-    margin: 1rem;
-}
-
-.link div {
-    display: inline-block;
-    padding: 0.5rem;
-    border: 1px solid #114e94;
-    border-radius: 50%;
-} */
-
-
-
-
-/* From Uiverse.io by alexruix */
-.card {
-    width: 190px;
-    height: 254px;
-    border-radius: 20px;
-    background: #f5f5f5;
-    position: relative;
-    /* padding: 1.8rem; */
-    margin-left: 600px;
-    border: 2px solid #c3c6ce;
-    transition: 0.5s ease-out;
-    overflow: visible;
-}
-
-.card-details {
-    color: black;
-    height: 100%;
-    gap: .5em;
-    display: grid;
-    place-content: center;
-}
-
-.card-button {
-    transform: translate(-50%, 125%);
-    width: 60%;
-    border-radius: 1rem;
-    border: none;
-    background-color: #008bf8;
-    color: #fff;
-    font-size: 1rem;
-    padding: .5rem 1rem;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    opacity: 0;
-    transition: 0.3s ease-out;
-}
-
-.text-body {
-    color: rgb(134, 134, 134);
-}
-
-/*Text*/
-.text-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/*Hover*/
-.card:hover {
-    border-color: #008bf8;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card:hover .card-button {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-}
-
-
-
-
-
-.cube-loader {
-    position: relative;
-    width: 300px;
-    /* Reduced size */
-    height: 50px;
-    /* Reduced size */
-    transform-style: preserve-3d;
-    transform: rotateX(-30deg);
-    animation: animate 4s linear infinite;
-    margin-left: 200px;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotateX(-30deg) rotateY(0);
-    }
-
-    100% {
-        transform: rotateX(-30deg) rotateY(360deg);
-    }
-}
-
-.cube-loader .cube-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-}
-
-.cube-loader .cube-wrapper .cube-span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotateY(calc(90deg * var(--i))) translateZ(25px);
-    /* Adjusted for smaller size */
-    background: linear-gradient(to bottom,
-            hsl(330, 3.13%, 25.1%) 0%,
-            hsl(177.27, 21.71%, 32.06%) 5.5%,
-            hsl(176.67, 34.1%, 36.88%) 12.1%,
-            hsl(176.61, 42.28%, 40.7%) 19.6%,
-            hsl(176.63, 48.32%, 43.88%) 27.9%,
-            hsl(176.66, 53.07%, 46.58%) 36.6%,
-            hsl(176.7, 56.94%, 48.91%) 45.6%,
-            hsl(176.74, 62.39%, 50.91%) 54.6%,
-            hsl(176.77, 69.86%, 52.62%) 63.4%,
-            hsl(176.8, 76.78%, 54.08%) 71.7%,
-            hsl(176.83, 83.02%, 55.29%) 79.4%,
-            hsl(176.85, 88.44%, 56.28%) 86.2%,
-            hsl(176.86, 92.9%, 57.04%) 91.9%,
-            hsl(176.88, 96.24%, 57.59%) 96.3%,
-            hsl(176.88, 98.34%, 57.93%) 99%,
-            hsl(176.89, 99.07%, 58.04%) 100%);
-}
-
-.cube-top {
-    position: absolute;
-    width: 50px;
-    /* Reduced size */
-    height: 50px;
-    /* Reduced size */
-    background: hsl(330, 3.13%, 25.1%) 0%;
-    transform: rotateX(90deg) translateZ(25px);
-    /* Adjusted for smaller size */
-    transform-style: preserve-3d;
-}
-
-.cube-top::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    /* Reduced size */
-    height: 50px;
-    /* Reduced size */
-    background: hsl(176.61, 42.28%, 40.7%) 19.6%;
-    transform: translateZ(-60px);
-    /* Adjusted for smaller size */
-    filter: blur(10px);
-    box-shadow: 0 0 10px #323232,
-        0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
-        0 0 30px #323232,
-        0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
-}
-
-
-
-
-/* From Uiverse.io by andrew-demchenk0 */
-.cube-amit {
-    position: relative;
-    width: 300px;
-    /* Adjusted size */
-    height: 50px;
-    /* Adjusted size */
-    transform-style: preserve-3d;
-    transform: rotateX(-30deg);
-    animation: animate 4s linear infinite;
-    margin-left: -510px;
-    margin-top: -55px;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotateX(-30deg) rotateY(0);
-    }
-
-    100% {
-        transform: rotateX(-30deg) rotateY(360deg);
-    }
-}
-
-.cube-amit .cube-rohit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-}
-
-.cube-amit .cube-rohit .cube-span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: rotateY(calc(90deg * var(--i))) translateZ(25px);
-    /* Adjusted for smaller size */
-    background: linear-gradient(to bottom,
-            hsl(330, 3.13%, 25.1%) 0%,
-            hsl(177.27, 21.71%, 32.06%) 5.5%,
-            hsl(176.67, 34.1%, 36.88%) 12.1%,
-            hsl(176.61, 42.28%, 40.7%) 19.6%,
-            hsl(176.63, 48.32%, 43.88%) 27.9%,
-            hsl(176.66, 53.07%, 46.58%) 36.6%,
-            hsl(176.7, 56.94%, 48.91%) 45.6%,
-            hsl(176.74, 62.39%, 50.91%) 54.6%,
-            hsl(176.77, 69.86%, 52.62%) 63.4%,
-            hsl(176.8, 76.78%, 54.08%) 71.7%,
-            hsl(176.83, 83.02%, 55.29%) 79.4%,
-            hsl(176.85, 88.44%, 56.28%) 86.2%,
-            hsl(176.86, 92.9%, 57.04%) 91.9%,
-            hsl(176.88, 96.24%, 57.59%) 96.3%,
-            hsl(176.88, 98.34%, 57.93%) 99%,
-            hsl(176.89, 99.07%, 58.04%) 100%);
-}
-
-.cube-rahul {
-    position: absolute;
-    width: 50px;
-    /* Adjusted size */
-    height: 50px;
-    /* Adjusted size */
-    background: hsl(330, 3.13%, 25.1%) 0%;
-    transform: rotateX(90deg) translateZ(25px);
-    /* Adjusted for smaller size */
-    transform-style: preserve-3d;
-}
-
-.cube-rahul::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    /* Adjusted size */
-    height: 50px;
-    /* Adjusted size */
-    background: hsl(176.61, 42.28%, 40.7%) 19.6%;
-    transform: translateZ(-60px);
-    /* Adjusted for smaller size */
-    filter: blur(10px);
-    box-shadow: 0 0 10px #323232,
-        0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
-        0 0 30px #323232,
-        0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
-}
-
-
-
-
-/* From Uiverse.io by Nawsome */
-/* From Uiverse.io by vinodjangid07 */
-.loader {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.truckWrapper {
-    width: 200px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: flex-end;
-    overflow-x: hidden;
-}
-
-/* truck upper body */
-.truckBody {
-    width: 130px;
-    height: fit-content;
-    margin-bottom: 6px;
-    animation: motion 1s linear infinite;
-}
-
-/* truck suspension animation*/
-@keyframes motion {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(3px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-/* truck's tires */
-.truckTires {
-    width: 130px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px 0px 15px;
-    position: absolute;
-    bottom: 0;
-}
-
-.truckTires svg {
-    width: 24px;
-}
-
-.road {
-    width: 100%;
-    height: 1.5px;
-    background-color: #282828;
-    position: relative;
-    bottom: 0;
-    align-self: flex-end;
-    border-radius: 3px;
-}
-
-.road::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 100%;
-    background-color: #282828;
-    right: -50%;
-    border-radius: 3px;
-    animation: roadAnimation 1.4s linear infinite;
-    border-left: 10px solid white;
-}
-
-.road::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    background-color: #282828;
-    right: -65%;
-    border-radius: 3px;
-    animation: roadAnimation 1.4s linear infinite;
-    border-left: 4px solid white;
-}
-
-.lampPost {
-    position: absolute;
-    bottom: 0;
-    right: -90%;
-    height: 90px;
-    animation: roadAnimation 1.4s linear infinite;
-}
-
-@keyframes roadAnimation {
-    0% {
-        transform: translateX(0px);
-    }
-
-    100% {
-        transform: translateX(-350px);
-    }
-}
-
-
-
+/* Sumi box styling */
 .sumi {
     background-color: #f0f8ff;
-    /* Light blue background */
     color: #003366;
-    /* Dark blue text color */
     border-radius: 10px;
-    /* Rounded corners */
-    padding-left: 89px;
-    /* Space inside the container */
+    padding: 1rem;
     max-width: 600px;
-    /* Maximum width of the container */
-    margin: 0 auto;
-    /* Center the container */
+    margin: 1rem auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for better visibility */
 }
 
 .sumi p {
@@ -501,53 +120,26 @@ table {
     margin-top: 1rem;
 }
 
-
-
-
-
-
-/* Basic reset and font styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-}
-
-.bg-opacity-75 {
-    background-color: rgba(255, 255, 255, 0.75);
-}
-
-.backdrop-blur-lg {
-    backdrop-filter: blur(10px);
-}
-
-/* Container styles */
+/* Responsive Container Styling */
 .container {
     background-color: var(--background, #fff);
     padding: 1rem;
     border-radius: 0.5rem;
-    border: 2px dotted #000;
     max-width: 28rem;
     margin: 2rem auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px dotted #000;
     backdrop-filter: blur(10px);
 }
 
-.text-center {
-    text-align: center;
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
 }
 
-.mb-4 {
-    margin-bottom: 1rem;
-}
-
+/* Utility Classes */
 .flex {
     display: flex;
 }
@@ -560,7 +152,7 @@ body {
     justify-content: center;
 }
 
-.space-x-2>*+* {
+.space-x-2 > * + * {
     margin-left: 0.5rem;
 }
 
@@ -622,95 +214,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 0.5rem;
-        max-width: 100%;
-    }
-
-    .text-lg {
-        font-size: 1rem;
-    }
-
-    .text-2xl {
-        font-size: 1.25rem;
-    }
-}
-
-/* Specific styles */
-h1 {
-    margin-top: 0.5rem;
-}
-
-img {
-    display: block;
-    width: 24px;
-    height: 24px;
-}
-
-.flex>.items-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.flex>.justify-between {
-    justify-content: space-between;
-}
-
-.bg-transparent {
-    background-color: transparent;
-}
-
-
-
-
-.text-green-500 {
-    color: #25D366;
-    /* WhatsApp's signature green color */
-}
-
-.text-lg {
-    font-size: 1.125rem;
-    /* Slightly larger font for emphasis */
-}
-
-.font-bold {
-    font-weight: 700;
-    /* Bold for visibility */
-}
-
-.text-center {
-    text-align: center;
-    margin-bottom: 1rem;
-    /* Add spacing at the bottom */
-}
-
-a {
-    text-decoration: none;
-    /* Remove underline from the link */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-a:hover {
-    color: #128C7E;
-    /* Darker green on hover */
-    text-shadow: 0 0 8px rgba(37, 211, 102, 0.7);
-    /* Glow effect on hover */
-}
-
-
-
-
-
-
+/* Heading Animation */
 @keyframes slowBlink {
-
-    0%,
-    100% {
+    0%, 100% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
@@ -723,14 +231,13 @@ a:hover {
     animation: slowBlink 4s infinite;
 }
 
+/* Link Styling */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
 
-
-
-
-table {
-    border: 1px solid var(--border);
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: auto;
-    /* Allows column widths to be dynamic based on content */
+a:hover {
+    color: #128C7E;
+    text-shadow: 0 0 8px rgba(37, 211, 102, 0.7);
 }
